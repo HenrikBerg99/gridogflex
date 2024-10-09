@@ -23,8 +23,8 @@ header.main_header {
 }
 
 header.main_header #logo {
-    width: 85px;
-    height: 85px;
+    width: 100px;
+    height: 100px;
     margin-bottom: 35px;
     border-radius: 100%;
     background-color: #fff;
@@ -37,6 +37,7 @@ header.main_header #logo a {
     display: block;
     color: #000;
     font-weight: 600;
+    font-size: 24px;
     text-decoration: none;
 }
 
@@ -47,6 +48,7 @@ header.main_header ul.nav {
     padding: 0px;
     gap: 1rem;
 }
+
 
 header.main_header ul.nav li a {
     display: block;
@@ -72,7 +74,6 @@ header.main_header ul.nav li a:hover {
 }
 
 main#mansory-grid {
-    grid-area: main;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-column: 2 / 3;
@@ -81,6 +82,7 @@ main#mansory-grid {
 
 main#mansory-grid h2.main_title {
     grid-column: 1 / 5;
+    font-weight: 700;
 }
 
 main#mansory-grid section.subgrid_container {
@@ -89,7 +91,14 @@ main#mansory-grid section.subgrid_container {
     align-items: flex-end;
     text-align: right;
     padding: 3rem;
-    border-radius: 10px; 
+    border-radius: 10px;
+    transition: .1s all ease;
+    cursor: pointer;
+}
+
+main#mansory-grid section.subgrid_container:hover {
+    transform: scale(1.02);
+    transition: .1s all ease;
 }
 
 /*-----------------------------------
